@@ -1,10 +1,6 @@
 import { authService } from 'services/auth/authService'
 import { mode } from 'helpers/URLRequest'
 
-interface ObjectLiteralBody {
-  [key: string]: any
-}
-
 type FetchOptions = {
   method: string
   headers: Headers

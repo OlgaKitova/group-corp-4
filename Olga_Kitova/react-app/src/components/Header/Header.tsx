@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', justifyContent: 'flex-end' }}>
-        <div>{name ? `Hello, ${name}` : null}</div>
+      {name && <div>{`Hello, ${name}`}</div>}
         <br />
         <Tooltip
           title={theme.palette.mode !== 'light' ? 'Choose a light theme' : 'Choose a dark theme'}

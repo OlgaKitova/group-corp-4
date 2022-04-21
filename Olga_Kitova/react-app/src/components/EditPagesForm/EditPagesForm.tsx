@@ -76,7 +76,7 @@ export default function EditPagesForm({ userId }: EditPagesFormType) {
     changeWindowEdit && changeWindowEdit()
   }
   return (
-    <Dialog open={openEdit !== undefined && openEdit}>
+    <Dialog open={openEdit != null && openEdit}>
       <DialogTitle>Edit page</DialogTitle>
       <DialogContent>
         <CreateFormBase

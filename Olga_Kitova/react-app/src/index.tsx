@@ -14,7 +14,8 @@ ReactDOM.render(
     <ContextProvider>
       <Router>
         <AuthProvider>
-          <App />
+          {/* @ts-ignore */}
+          <App/>
         </AuthProvider>
       </Router>
     </ContextProvider>

@@ -5,4 +5,4 @@ export const BASE_URL_LOGS = `${BASE_URL}/api/logs`
 export const BASE_URL_USERS = `${BASE_URL}/api/users`
 export const BASE_URL_USERS_LOGS = `${BASE_URL}/api/users?_embed=logs`
 
-export const mode = process.env.NODE_ENV
+export const mode = process.env.NODE_ENV || 'production'

@@ -16,10 +16,11 @@ import PageAddPage from 'pages/PageAddPage'
 import PageListComments from 'pages/PageListComments'
 import PageListUsers from 'pages/PageListUsers'
 
-
-export default function App(props: any) {
-  const user: UserType = props.user
-  const handleSuccessAuth: (user: UserType) => void = props.handleSuccessAuth
+type AppProps = {
+  user: UserType
+  handleSuccessAuth: (user: UserType) => void
+}
+export default function App({user, handleSuccessAuth}: AppProps) {
 
   return (
     <>

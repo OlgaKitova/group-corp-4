@@ -1,5 +1,9 @@
 type Multiple = string | number | undefined
 
+interface ObjectLiteralBody {
+  [key: string]: any
+}
+
 type ObjectStringsValue = {
   [key: string]: string
 }

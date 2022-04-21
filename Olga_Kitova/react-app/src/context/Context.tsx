@@ -35,7 +35,7 @@ function ContextProvider({ children }: ContextProviderProps) {
   }
 
   const [mode, setMode] = useState<PaletteMode>(saveTheme)
-  const [openEdit, setOpenEdit] = useState(false)
+  const [openEdit, setOpenEdit] = useState<ObjectLiteralContext["openEdit"]> (false)
 
   const toggleTheme = useMemo(
     () => ({
